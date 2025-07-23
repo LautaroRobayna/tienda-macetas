@@ -1,3 +1,4 @@
+import { Categories } from "@/components/Categories";
 import { Hero } from "@/components/Hero";
 
 export const metadata = {
@@ -9,6 +10,7 @@ export default function Home() {
   return (
     <>
       <Hero />
+      <Categories />
     </>
   );
 }

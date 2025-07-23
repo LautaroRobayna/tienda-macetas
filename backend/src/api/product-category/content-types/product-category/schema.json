@@ -1,5 +1,5 @@
 {
-  "kind": "singleType",
+  "kind": "collectionType",
   "collectionName": "product_categories",
   "info": {
     "singularName": "product-category",
@@ -32,6 +32,12 @@
         "images",
         "files"
       ]
+    },
+    "products": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::product.product",
+      "mappedBy": "product_category"
     }
   }
 }
